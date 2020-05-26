@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
 
 /** 3) Serve an HTML file */
 app.get("/", (res, req) => {
-    res.sendFile(__dirname + /views/index.html);
+    res.sendFile(__dirname + "/views/index.html");
 });
 
 /** 4) Serve static assets  */
