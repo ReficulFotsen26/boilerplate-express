@@ -80,7 +80,11 @@ app.get('/name', (req, res) => {
 
 
 /** 12) Get data form POST  */
-
+app.post('/name', (req, res) => {
+    var firstname = req.body.first;
+    var lastname = req.body.last;
+    res.json({ name: firstname + ' ' + lastname });
+});
 
 
 // This would be part of the basic setup of an Express app
